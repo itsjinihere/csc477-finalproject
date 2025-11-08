@@ -1,0 +1,922 @@
+country,iso2,year,procedure,interest
+Kazakhstan,KZ,2010,skin_brightening,100
+Singapore,SG,2010,skin_brightening,9
+South Africa,ZA,2010,skin_brightening,7
+Thailand,TH,2010,skin_brightening,6
+Czechia,CZ,2010,skin_brightening,4
+Malaysia,MY,2010,skin_brightening,4
+United States,US,2010,skin_brightening,3
+Australia,AU,2010,skin_brightening,3
+Canada,CA,2010,skin_brightening,3
+United Kingdom,GB,2010,skin_brightening,2
+India,IN,2010,skin_brightening,2
+China,CN,2010,skin_brightening,1
+Germany,DE,2010,skin_brightening,1
+Nigeria,NG,2011,skin_brightening,100
+Singapore,SG,2011,skin_brightening,58
+Thailand,TH,2011,skin_brightening,38
+Canada,CA,2011,skin_brightening,34
+South Africa,ZA,2011,skin_brightening,34
+United States,US,2011,skin_brightening,32
+Australia,AU,2011,skin_brightening,30
+Malaysia,MY,2011,skin_brightening,29
+Pakistan,PK,2011,skin_brightening,28
+United Kingdom,GB,2011,skin_brightening,27
+New Zealand,NZ,2011,skin_brightening,26
+Philippines,PH,2011,skin_brightening,22
+India,IN,2011,skin_brightening,18
+Ireland,IE,2011,skin_brightening,16
+Indonesia,ID,2011,skin_brightening,11
+Vietnam,VN,2011,skin_brightening,7
+China,CN,2011,skin_brightening,4
+Türkiye,TR,2011,skin_brightening,3
+Germany,DE,2011,skin_brightening,1
+Singapore,SG,2012,skin_brightening,100
+Nigeria,NG,2012,skin_brightening,91
+Bangladesh,BD,2012,skin_brightening,83
+South Africa,ZA,2012,skin_brightening,50
+New Zealand,NZ,2012,skin_brightening,50
+Canada,CA,2012,skin_brightening,43
+United States,US,2012,skin_brightening,41
+Thailand,TH,2012,skin_brightening,41
+Australia,AU,2012,skin_brightening,40
+Pakistan,PK,2012,skin_brightening,38
+United Arab Emirates,AE,2012,skin_brightening,36
+Malaysia,MY,2012,skin_brightening,33
+United Kingdom,GB,2012,skin_brightening,33
+India,IN,2012,skin_brightening,29
+Ireland,IE,2012,skin_brightening,29
+Philippines,PH,2012,skin_brightening,27
+Hong Kong,HK,2012,skin_brightening,25
+Denmark,DK,2012,skin_brightening,18
+Sweden,SE,2012,skin_brightening,16
+Indonesia,ID,2012,skin_brightening,14
+South Korea,KR,2012,skin_brightening,11
+Vietnam,VN,2012,skin_brightening,8
+Netherlands,NL,2012,skin_brightening,7
+Saudi Arabia,SA,2012,skin_brightening,7
+Türkiye,TR,2012,skin_brightening,6
+China,CN,2012,skin_brightening,5
+Poland,PL,2012,skin_brightening,3
+Germany,DE,2012,skin_brightening,2
+Japan,JP,2012,skin_brightening,2
+Brazil,BR,2012,skin_brightening,2
+Uganda,UG,2013,skin_brightening,100
+Trinidad & Tobago,TT,2013,skin_brightening,71
+Nigeria,NG,2013,skin_brightening,55
+Singapore,SG,2013,skin_brightening,53
+Bangladesh,BD,2013,skin_brightening,51
+Kenya,KE,2013,skin_brightening,37
+South Africa,ZA,2013,skin_brightening,33
+New Zealand,NZ,2013,skin_brightening,26
+Australia,AU,2013,skin_brightening,23
+India,IN,2013,skin_brightening,23
+Kuwait,KW,2013,skin_brightening,22
+Hong Kong,HK,2013,skin_brightening,22
+Canada,CA,2013,skin_brightening,22
+United States,US,2013,skin_brightening,21
+United Arab Emirates,AE,2013,skin_brightening,19
+Malaysia,MY,2013,skin_brightening,19
+Thailand,TH,2013,skin_brightening,18
+United Kingdom,GB,2013,skin_brightening,18
+Philippines,PH,2013,skin_brightening,17
+Pakistan,PK,2013,skin_brightening,12
+Ireland,IE,2013,skin_brightening,9
+Indonesia,ID,2013,skin_brightening,9
+Sweden,SE,2013,skin_brightening,7
+Saudi Arabia,SA,2013,skin_brightening,6
+Vietnam,VN,2013,skin_brightening,5
+China,CN,2013,skin_brightening,4
+Netherlands,NL,2013,skin_brightening,4
+Türkiye,TR,2013,skin_brightening,3
+Belgium,BE,2013,skin_brightening,3
+Poland,PL,2013,skin_brightening,2
+Germany,DE,2013,skin_brightening,2
+Russia,RU,2013,skin_brightening,2
+Mexico,MX,2013,skin_brightening,1
+Spain,ES,2013,skin_brightening,1
+France,FR,2013,skin_brightening,1
+Italy,IT,2013,skin_brightening,1
+Brazil,BR,2013,skin_brightening,1
+Trinidad & Tobago,TT,2014,skin_brightening,100
+Nigeria,NG,2014,skin_brightening,94
+Jamaica,JM,2014,skin_brightening,87
+Ghana,GH,2014,skin_brightening,70
+Singapore,SG,2014,skin_brightening,59
+Kenya,KE,2014,skin_brightening,53
+South Africa,ZA,2014,skin_brightening,47
+Bangladesh,BD,2014,skin_brightening,44
+Qatar,QA,2014,skin_brightening,40
+Hong Kong,HK,2014,skin_brightening,36
+New Zealand,NZ,2014,skin_brightening,34
+India,IN,2014,skin_brightening,33
+Australia,AU,2014,skin_brightening,32
+Pakistan,PK,2014,skin_brightening,32
+Malaysia,MY,2014,skin_brightening,32
+Canada,CA,2014,skin_brightening,30
+United States,US,2014,skin_brightening,29
+United Kingdom,GB,2014,skin_brightening,27
+United Arab Emirates,AE,2014,skin_brightening,25
+Sri Lanka,LK,2014,skin_brightening,25
+Philippines,PH,2014,skin_brightening,20
+Thailand,TH,2014,skin_brightening,19
+Ireland,IE,2014,skin_brightening,14
+Sweden,SE,2014,skin_brightening,12
+Norway,NO,2014,skin_brightening,11
+Indonesia,ID,2014,skin_brightening,11
+Bolivia,BO,2014,skin_brightening,10
+Slovakia,SK,2014,skin_brightening,10
+Vietnam,VN,2014,skin_brightening,8
+Denmark,DK,2014,skin_brightening,8
+Netherlands,NL,2014,skin_brightening,8
+Saudi Arabia,SA,2014,skin_brightening,7
+South Korea,KR,2014,skin_brightening,6
+Egypt,EG,2014,skin_brightening,5
+Türkiye,TR,2014,skin_brightening,3
+Mexico,MX,2014,skin_brightening,2
+Germany,DE,2014,skin_brightening,2
+Poland,PL,2014,skin_brightening,2
+Russia,RU,2014,skin_brightening,2
+France,FR,2014,skin_brightening,2
+Italy,IT,2014,skin_brightening,1
+Spain,ES,2014,skin_brightening,1
+Brazil,BR,2014,skin_brightening,1
+Japan,JP,2014,skin_brightening,1
+India,IN,2015,skin_brightening,100
+Zimbabwe,ZW,2015,skin_brightening,52
+Nigeria,NG,2015,skin_brightening,48
+Trinidad & Tobago,TT,2015,skin_brightening,46
+Nepal,NP,2015,skin_brightening,35
+Singapore,SG,2015,skin_brightening,34
+Bangladesh,BD,2015,skin_brightening,29
+South Africa,ZA,2015,skin_brightening,24
+Ghana,GH,2015,skin_brightening,23
+Malaysia,MY,2015,skin_brightening,22
+United Arab Emirates,AE,2015,skin_brightening,19
+Kenya,KE,2015,skin_brightening,18
+Pakistan,PK,2015,skin_brightening,17
+Australia,AU,2015,skin_brightening,17
+New Zealand,NZ,2015,skin_brightening,17
+Canada,CA,2015,skin_brightening,16
+United States,US,2015,skin_brightening,14
+United Kingdom,GB,2015,skin_brightening,14
+Hong Kong,HK,2015,skin_brightening,12
+Philippines,PH,2015,skin_brightening,10
+Ireland,IE,2015,skin_brightening,10
+Indonesia,ID,2015,skin_brightening,8
+Bolivia,BO,2015,skin_brightening,8
+Thailand,TH,2015,skin_brightening,8
+Jordan,JO,2015,skin_brightening,7
+Vietnam,VN,2015,skin_brightening,6
+South Korea,KR,2015,skin_brightening,5
+Sweden,SE,2015,skin_brightening,5
+Saudi Arabia,SA,2015,skin_brightening,4
+Norway,NO,2015,skin_brightening,4
+Finland,FI,2015,skin_brightening,4
+Denmark,DK,2015,skin_brightening,3
+Greece,GR,2015,skin_brightening,3
+Netherlands,NL,2015,skin_brightening,2
+Israel,IL,2015,skin_brightening,2
+Egypt,EG,2015,skin_brightening,2
+Belgium,BE,2015,skin_brightening,2
+Taiwan,TW,2015,skin_brightening,2
+Romania,RO,2015,skin_brightening,2
+Poland,PL,2015,skin_brightening,2
+Mexico,MX,2015,skin_brightening,1
+Germany,DE,2015,skin_brightening,1
+Türkiye,TR,2015,skin_brightening,1
+Spain,ES,2015,skin_brightening,1
+Russia,RU,2015,skin_brightening,1
+Brazil,BR,2015,skin_brightening,1
+France,FR,2015,skin_brightening,1
+Japan,JP,2015,skin_brightening,1
+Italy,IT,2015,skin_brightening,1
+India,IN,2016,skin_brightening,100
+Zambia,ZM,2016,skin_brightening,25
+Nigeria,NG,2016,skin_brightening,21
+Singapore,SG,2016,skin_brightening,19
+Mauritius,MU,2016,skin_brightening,17
+Nepal,NP,2016,skin_brightening,16
+Uganda,UG,2016,skin_brightening,16
+Ghana,GH,2016,skin_brightening,14
+Bangladesh,BD,2016,skin_brightening,13
+Bahrain,BH,2016,skin_brightening,13
+Hong Kong,HK,2016,skin_brightening,12
+South Africa,ZA,2016,skin_brightening,11
+Jamaica,JM,2016,skin_brightening,11
+United Arab Emirates,AE,2016,skin_brightening,10
+Malaysia,MY,2016,skin_brightening,10
+Australia,AU,2016,skin_brightening,9
+Qatar,QA,2016,skin_brightening,9
+Pakistan,PK,2016,skin_brightening,8
+Kenya,KE,2016,skin_brightening,8
+United States,US,2016,skin_brightening,8
+New Zealand,NZ,2016,skin_brightening,8
+Canada,CA,2016,skin_brightening,7
+United Kingdom,GB,2016,skin_brightening,7
+Ireland,IE,2016,skin_brightening,6
+Philippines,PH,2016,skin_brightening,5
+Vietnam,VN,2016,skin_brightening,4
+Indonesia,ID,2016,skin_brightening,4
+Thailand,TH,2016,skin_brightening,4
+Norway,NO,2016,skin_brightening,3
+Jordan,JO,2016,skin_brightening,3
+Sweden,SE,2016,skin_brightening,3
+Serbia,RS,2016,skin_brightening,2
+Netherlands,NL,2016,skin_brightening,2
+Saudi Arabia,SA,2016,skin_brightening,2
+South Korea,KR,2016,skin_brightening,2
+Denmark,DK,2016,skin_brightening,2
+Taiwan,TW,2016,skin_brightening,1
+Germany,DE,2016,skin_brightening,1
+Switzerland,CH,2016,skin_brightening,1
+Greece,GR,2016,skin_brightening,1
+Italy,IT,2016,skin_brightening,1
+Belgium,BE,2016,skin_brightening,1
+Egypt,EG,2016,skin_brightening,1
+Poland,PL,2016,skin_brightening,1
+Ukraine,UA,2016,skin_brightening,1
+Russia,RU,2016,skin_brightening,1
+Mexico,MX,2016,skin_brightening,1
+France,FR,2016,skin_brightening,1
+Türkiye,TR,2016,skin_brightening,1
+Spain,ES,2016,skin_brightening,1
+Japan,JP,2016,skin_brightening,1
+Brazil,BR,2016,skin_brightening,1
+Barbados,BB,2017,skin_brightening,100
+Zambia,ZM,2017,skin_brightening,74
+Uganda,UG,2017,skin_brightening,45
+Trinidad & Tobago,TT,2017,skin_brightening,43
+Singapore,SG,2017,skin_brightening,43
+Nigeria,NG,2017,skin_brightening,41
+India,IN,2017,skin_brightening,40
+Malaysia,MY,2017,skin_brightening,28
+Bangladesh,BD,2017,skin_brightening,25
+Nepal,NP,2017,skin_brightening,24
+Pakistan,PK,2017,skin_brightening,24
+South Africa,ZA,2017,skin_brightening,23
+Ghana,GH,2017,skin_brightening,21
+United Arab Emirates,AE,2017,skin_brightening,21
+Philippines,PH,2017,skin_brightening,20
+United States,US,2017,skin_brightening,20
+Australia,AU,2017,skin_brightening,19
+New Zealand,NZ,2017,skin_brightening,19
+Canada,CA,2017,skin_brightening,17
+Kenya,KE,2017,skin_brightening,16
+United Kingdom,GB,2017,skin_brightening,16
+Hong Kong,HK,2017,skin_brightening,14
+Kuwait,KW,2017,skin_brightening,14
+Qatar,QA,2017,skin_brightening,11
+Indonesia,ID,2017,skin_brightening,11
+St. Helena,GB,2017,skin_brightening,11
+Ireland,IE,2017,skin_brightening,10
+Vietnam,VN,2017,skin_brightening,10
+Thailand,TH,2017,skin_brightening,8
+Sri Lanka,LK,2017,skin_brightening,8
+Sweden,SE,2017,skin_brightening,7
+Norway,NO,2017,skin_brightening,6
+South Korea,KR,2017,skin_brightening,5
+Serbia,RS,2017,skin_brightening,5
+Denmark,DK,2017,skin_brightening,4
+Saudi Arabia,SA,2017,skin_brightening,4
+Switzerland,CH,2017,skin_brightening,4
+Netherlands,NL,2017,skin_brightening,3
+Finland,FI,2017,skin_brightening,3
+Israel,IL,2017,skin_brightening,2
+Taiwan,TW,2017,skin_brightening,2
+Germany,DE,2017,skin_brightening,2
+Romania,RO,2017,skin_brightening,2
+Greece,GR,2017,skin_brightening,2
+Türkiye,TR,2017,skin_brightening,2
+Ukraine,UA,2017,skin_brightening,1
+Russia,RU,2017,skin_brightening,1
+Poland,PL,2017,skin_brightening,1
+Egypt,EG,2017,skin_brightening,1
+Mexico,MX,2017,skin_brightening,1
+Spain,ES,2017,skin_brightening,1
+Italy,IT,2017,skin_brightening,1
+France,FR,2017,skin_brightening,1
+Japan,JP,2017,skin_brightening,1
+Brazil,BR,2017,skin_brightening,1
+Zambia,ZM,2018,skin_brightening,100
+Brunei,BN,2018,skin_brightening,90
+Trinidad & Tobago,TT,2018,skin_brightening,84
+Singapore,SG,2018,skin_brightening,66
+Nigeria,NG,2018,skin_brightening,63
+Malaysia,MY,2018,skin_brightening,58
+Jamaica,JM,2018,skin_brightening,57
+South Africa,ZA,2018,skin_brightening,57
+Ghana,GH,2018,skin_brightening,55
+Pakistan,PK,2018,skin_brightening,54
+United Arab Emirates,AE,2018,skin_brightening,51
+Bangladesh,BD,2018,skin_brightening,46
+Qatar,QA,2018,skin_brightening,46
+Uganda,UG,2018,skin_brightening,45
+India,IN,2018,skin_brightening,37
+Philippines,PH,2018,skin_brightening,36
+Australia,AU,2018,skin_brightening,35
+United States,US,2018,skin_brightening,35
+Canada,CA,2018,skin_brightening,31
+United Kingdom,GB,2018,skin_brightening,30
+New Zealand,NZ,2018,skin_brightening,29
+Cambodia,KH,2018,skin_brightening,28
+Kenya,KE,2018,skin_brightening,27
+Hong Kong,HK,2018,skin_brightening,25
+Nepal,NP,2018,skin_brightening,25
+Sri Lanka,LK,2018,skin_brightening,25
+Ireland,IE,2018,skin_brightening,22
+Indonesia,ID,2018,skin_brightening,21
+Thailand,TH,2018,skin_brightening,17
+Vietnam,VN,2018,skin_brightening,15
+Kuwait,KW,2018,skin_brightening,14
+Norway,NO,2018,skin_brightening,12
+Sweden,SE,2018,skin_brightening,11
+Denmark,DK,2018,skin_brightening,11
+Kazakhstan,KZ,2018,skin_brightening,9
+Saudi Arabia,SA,2018,skin_brightening,9
+South Korea,KR,2018,skin_brightening,8
+Dominican Republic,DO,2018,skin_brightening,8
+Netherlands,NL,2018,skin_brightening,6
+Israel,IL,2018,skin_brightening,6
+Taiwan,TW,2018,skin_brightening,5
+Ukraine,UA,2018,skin_brightening,5
+Finland,FI,2018,skin_brightening,5
+Hungary,HU,2018,skin_brightening,5
+Greece,GR,2018,skin_brightening,5
+Russia,RU,2018,skin_brightening,4
+Germany,DE,2018,skin_brightening,4
+Switzerland,CH,2018,skin_brightening,4
+Belgium,BE,2018,skin_brightening,4
+Mexico,MX,2018,skin_brightening,4
+Egypt,EG,2018,skin_brightening,3
+Austria,AT,2018,skin_brightening,3
+Chile,CL,2018,skin_brightening,3
+Spain,ES,2018,skin_brightening,3
+Romania,RO,2018,skin_brightening,3
+Türkiye,TR,2018,skin_brightening,3
+Poland,PL,2018,skin_brightening,3
+Iran,IR,2018,skin_brightening,2
+France,FR,2018,skin_brightening,2
+Italy,IT,2018,skin_brightening,2
+Colombia,CO,2018,skin_brightening,1
+Japan,JP,2018,skin_brightening,1
+Brazil,BR,2018,skin_brightening,1
+Zambia,ZM,2019,skin_brightening,100
+Nigeria,NG,2019,skin_brightening,63
+Uganda,UG,2019,skin_brightening,62
+Zimbabwe,ZW,2019,skin_brightening,60
+Bangladesh,BD,2019,skin_brightening,58
+Ghana,GH,2019,skin_brightening,57
+South Africa,ZA,2019,skin_brightening,54
+Singapore,SG,2019,skin_brightening,53
+Trinidad & Tobago,TT,2019,skin_brightening,52
+Pakistan,PK,2019,skin_brightening,46
+Malaysia,MY,2019,skin_brightening,45
+United Arab Emirates,AE,2019,skin_brightening,43
+India,IN,2019,skin_brightening,37
+Bahrain,BH,2019,skin_brightening,34
+Sri Lanka,LK,2019,skin_brightening,34
+Australia,AU,2019,skin_brightening,32
+Myanmar (Burma),MM,2019,skin_brightening,32
+Indonesia,ID,2019,skin_brightening,29
+New Zealand,NZ,2019,skin_brightening,28
+Kenya,KE,2019,skin_brightening,28
+Philippines,PH,2019,skin_brightening,28
+Canada,CA,2019,skin_brightening,28
+United States,US,2019,skin_brightening,26
+United Kingdom,GB,2019,skin_brightening,25
+Tanzania,TZ,2019,skin_brightening,25
+Oman,OM,2019,skin_brightening,23
+Hong Kong,HK,2019,skin_brightening,19
+Nepal,NP,2019,skin_brightening,19
+Ireland,IE,2019,skin_brightening,18
+Qatar,QA,2019,skin_brightening,18
+Vietnam,VN,2019,skin_brightening,15
+Thailand,TH,2019,skin_brightening,14
+Puerto Rico,PR,2019,skin_brightening,13
+Lebanon,LB,2019,skin_brightening,12
+Norway,NO,2019,skin_brightening,11
+Jordan,JO,2019,skin_brightening,11
+Saudi Arabia,SA,2019,skin_brightening,9
+Sweden,SE,2019,skin_brightening,8
+South Korea,KR,2019,skin_brightening,8
+Kazakhstan,KZ,2019,skin_brightening,7
+Denmark,DK,2019,skin_brightening,7
+Netherlands,NL,2019,skin_brightening,6
+Dominican Republic,DO,2019,skin_brightening,6
+Morocco,MA,2019,skin_brightening,5
+Egypt,EG,2019,skin_brightening,5
+Switzerland,CH,2019,skin_brightening,5
+Israel,IL,2019,skin_brightening,5
+Russia,RU,2019,skin_brightening,5
+Mexico,MX,2019,skin_brightening,4
+Belarus,BY,2019,skin_brightening,4
+Belgium,BE,2019,skin_brightening,4
+Ukraine,UA,2019,skin_brightening,4
+Taiwan,TW,2019,skin_brightening,3
+Czechia,CZ,2019,skin_brightening,3
+Finland,FI,2019,skin_brightening,3
+Portugal,PT,2019,skin_brightening,3
+Greece,GR,2019,skin_brightening,3
+Germany,DE,2019,skin_brightening,3
+Peru,PE,2019,skin_brightening,3
+Austria,AT,2019,skin_brightening,3
+Poland,PL,2019,skin_brightening,2
+Spain,ES,2019,skin_brightening,2
+Türkiye,TR,2019,skin_brightening,2
+Chile,CL,2019,skin_brightening,2
+France,FR,2019,skin_brightening,2
+Italy,IT,2019,skin_brightening,2
+Colombia,CO,2019,skin_brightening,2
+Iran,IR,2019,skin_brightening,1
+Brazil,BR,2019,skin_brightening,1
+Argentina,AR,2019,skin_brightening,1
+Japan,JP,2019,skin_brightening,1
+Bhutan,BT,2020,skin_brightening,100
+Zambia,ZM,2020,skin_brightening,75
+Uganda,UG,2020,skin_brightening,57
+Nigeria,NG,2020,skin_brightening,44
+Bangladesh,BD,2020,skin_brightening,43
+Bahamas,BS,2020,skin_brightening,40
+Ghana,GH,2020,skin_brightening,39
+South Africa,ZA,2020,skin_brightening,36
+Brunei,BN,2020,skin_brightening,33
+Malaysia,MY,2020,skin_brightening,32
+Singapore,SG,2020,skin_brightening,31
+Zimbabwe,ZW,2020,skin_brightening,30
+Trinidad & Tobago,TT,2020,skin_brightening,30
+Namibia,NA,2020,skin_brightening,30
+Pakistan,PK,2020,skin_brightening,28
+India,IN,2020,skin_brightening,26
+Kenya,KE,2020,skin_brightening,24
+United Arab Emirates,AE,2020,skin_brightening,24
+Jamaica,JM,2020,skin_brightening,23
+Mauritius,MU,2020,skin_brightening,22
+Australia,AU,2020,skin_brightening,19
+Indonesia,ID,2020,skin_brightening,18
+Cameroon,CM,2020,skin_brightening,18
+United Kingdom,GB,2020,skin_brightening,17
+New Zealand,NZ,2020,skin_brightening,17
+Nepal,NP,2020,skin_brightening,17
+Philippines,PH,2020,skin_brightening,16
+Oman,OM,2020,skin_brightening,16
+Canada,CA,2020,skin_brightening,16
+Qatar,QA,2020,skin_brightening,16
+Sri Lanka,LK,2020,skin_brightening,16
+Myanmar (Burma),MM,2020,skin_brightening,16
+United States,US,2020,skin_brightening,15
+Bahrain,BH,2020,skin_brightening,15
+Ireland,IE,2020,skin_brightening,13
+Kuwait,KW,2020,skin_brightening,13
+Hong Kong,HK,2020,skin_brightening,11
+Vietnam,VN,2020,skin_brightening,10
+Tanzania,TZ,2020,skin_brightening,10
+Georgia,GE,2020,skin_brightening,7
+Cambodia,KH,2020,skin_brightening,7
+Puerto Rico,PR,2020,skin_brightening,7
+Thailand,TH,2020,skin_brightening,7
+Lebanon,LB,2020,skin_brightening,6
+Sweden,SE,2020,skin_brightening,6
+Norway,NO,2020,skin_brightening,6
+Panama,PA,2020,skin_brightening,5
+Denmark,DK,2020,skin_brightening,5
+Paraguay,PY,2020,skin_brightening,4
+Netherlands,NL,2020,skin_brightening,4
+Jordan,JO,2020,skin_brightening,4
+Kazakhstan,KZ,2020,skin_brightening,4
+Saudi Arabia,SA,2020,skin_brightening,3
+South Korea,KR,2020,skin_brightening,3
+Lithuania,LT,2020,skin_brightening,3
+Dominican Republic,DO,2020,skin_brightening,3
+Finland,FI,2020,skin_brightening,3
+Ukraine,UA,2020,skin_brightening,3
+Taiwan,TW,2020,skin_brightening,3
+Egypt,EG,2020,skin_brightening,3
+Greece,GR,2020,skin_brightening,3
+Belarus,BY,2020,skin_brightening,3
+Switzerland,CH,2020,skin_brightening,3
+Croatia,HR,2020,skin_brightening,2
+Russia,RU,2020,skin_brightening,2
+Mexico,MX,2020,skin_brightening,2
+Iraq,IQ,2020,skin_brightening,2
+Morocco,MA,2020,skin_brightening,2
+Romania,RO,2020,skin_brightening,2
+Belgium,BE,2020,skin_brightening,2
+Portugal,PT,2020,skin_brightening,2
+Germany,DE,2020,skin_brightening,2
+Israel,IL,2020,skin_brightening,2
+Czechia,CZ,2020,skin_brightening,2
+Austria,AT,2020,skin_brightening,2
+Türkiye,TR,2020,skin_brightening,2
+Poland,PL,2020,skin_brightening,2
+Venezuela,VE,2020,skin_brightening,1
+Ecuador,EC,2020,skin_brightening,1
+Spain,ES,2020,skin_brightening,1
+Hungary,HU,2020,skin_brightening,1
+Peru,PE,2020,skin_brightening,1
+Chile,CL,2020,skin_brightening,1
+Italy,IT,2020,skin_brightening,1
+Iran,IR,2020,skin_brightening,1
+France,FR,2020,skin_brightening,1
+Colombia,CO,2020,skin_brightening,1
+Brazil,BR,2020,skin_brightening,1
+Argentina,AR,2020,skin_brightening,1
+Japan,JP,2020,skin_brightening,1
+Zambia,ZM,2021,skin_brightening,100
+Bangladesh,BD,2021,skin_brightening,67
+Uganda,UG,2021,skin_brightening,65
+Ghana,GH,2021,skin_brightening,56
+Nigeria,NG,2021,skin_brightening,53
+Zimbabwe,ZW,2021,skin_brightening,52
+Trinidad & Tobago,TT,2021,skin_brightening,49
+Pakistan,PK,2021,skin_brightening,46
+India,IN,2021,skin_brightening,46
+Malaysia,MY,2021,skin_brightening,44
+South Africa,ZA,2021,skin_brightening,42
+Singapore,SG,2021,skin_brightening,41
+Sri Lanka,LK,2021,skin_brightening,40
+United Arab Emirates,AE,2021,skin_brightening,39
+Kenya,KE,2021,skin_brightening,38
+Mauritius,MU,2021,skin_brightening,37
+Cambodia,KH,2021,skin_brightening,28
+Nepal,NP,2021,skin_brightening,26
+Indonesia,ID,2021,skin_brightening,26
+Qatar,QA,2021,skin_brightening,26
+New Zealand,NZ,2021,skin_brightening,26
+Jamaica,JM,2021,skin_brightening,24
+Australia,AU,2021,skin_brightening,23
+Canada,CA,2021,skin_brightening,23
+Philippines,PH,2021,skin_brightening,20
+Cameroon,CM,2021,skin_brightening,20
+Myanmar (Burma),MM,2021,skin_brightening,19
+Ethiopia,ET,2021,skin_brightening,19
+United Kingdom,GB,2021,skin_brightening,19
+United States,US,2021,skin_brightening,19
+Bahrain,BH,2021,skin_brightening,16
+Ireland,IE,2021,skin_brightening,15
+Vietnam,VN,2021,skin_brightening,15
+Hong Kong,HK,2021,skin_brightening,15
+Puerto Rico,PR,2021,skin_brightening,15
+Tanzania,TZ,2021,skin_brightening,14
+Norway,NO,2021,skin_brightening,12
+Kuwait,KW,2021,skin_brightening,11
+Kyrgyzstan,KG,2021,skin_brightening,11
+Oman,OM,2021,skin_brightening,10
+Sweden,SE,2021,skin_brightening,10
+Lebanon,LB,2021,skin_brightening,10
+Iraq,IQ,2021,skin_brightening,10
+Jordan,JO,2021,skin_brightening,8
+Saudi Arabia,SA,2021,skin_brightening,7
+Bosnia & Herzegovina,BA,2021,skin_brightening,7
+Thailand,TH,2021,skin_brightening,7
+Kazakhstan,KZ,2021,skin_brightening,7
+Azerbaijan,AZ,2021,skin_brightening,7
+Netherlands,NL,2021,skin_brightening,6
+Slovenia,SI,2021,skin_brightening,6
+Ukraine,UA,2021,skin_brightening,5
+Denmark,DK,2021,skin_brightening,5
+Morocco,MA,2021,skin_brightening,5
+Israel,IL,2021,skin_brightening,5
+South Korea,KR,2021,skin_brightening,4
+Guatemala,GT,2021,skin_brightening,4
+Dominican Republic,DO,2021,skin_brightening,4
+Mexico,MX,2021,skin_brightening,4
+Egypt,EG,2021,skin_brightening,4
+Romania,RO,2021,skin_brightening,4
+Finland,FI,2021,skin_brightening,4
+Croatia,HR,2021,skin_brightening,4
+Belarus,BY,2021,skin_brightening,4
+Russia,RU,2021,skin_brightening,4
+Taiwan,TW,2021,skin_brightening,4
+Hungary,HU,2021,skin_brightening,4
+Belgium,BE,2021,skin_brightening,4
+Switzerland,CH,2021,skin_brightening,3
+Greece,GR,2021,skin_brightening,3
+Venezuela,VE,2021,skin_brightening,3
+Portugal,PT,2021,skin_brightening,3
+Ecuador,EC,2021,skin_brightening,3
+Algeria,DZ,2021,skin_brightening,3
+Austria,AT,2021,skin_brightening,3
+Germany,DE,2021,skin_brightening,3
+Czechia,CZ,2021,skin_brightening,3
+Poland,PL,2021,skin_brightening,2
+Chile,CL,2021,skin_brightening,2
+Türkiye,TR,2021,skin_brightening,2
+Spain,ES,2021,skin_brightening,2
+France,FR,2021,skin_brightening,2
+Italy,IT,2021,skin_brightening,1
+Colombia,CO,2021,skin_brightening,1
+Peru,PE,2021,skin_brightening,1
+Iran,IR,2021,skin_brightening,1
+Argentina,AR,2021,skin_brightening,1
+Japan,JP,2021,skin_brightening,1
+Brazil,BR,2021,skin_brightening,1
+British Virgin Islands,GB,2022,skin_brightening,100
+Zambia,ZM,2022,skin_brightening,30
+Bhutan,BT,2022,skin_brightening,20
+Nigeria,NG,2022,skin_brightening,20
+Malawi,MW,2022,skin_brightening,19
+Uganda,UG,2022,skin_brightening,18
+Botswana,BW,2022,skin_brightening,17
+Ghana,GH,2022,skin_brightening,17
+Brunei,BN,2022,skin_brightening,15
+Bangladesh,BD,2022,skin_brightening,14
+Pakistan,PK,2022,skin_brightening,13
+South Africa,ZA,2022,skin_brightening,13
+India,IN,2022,skin_brightening,13
+Zimbabwe,ZW,2022,skin_brightening,12
+Malaysia,MY,2022,skin_brightening,12
+Kenya,KE,2022,skin_brightening,11
+Mauritius,MU,2022,skin_brightening,10
+Trinidad & Tobago,TT,2022,skin_brightening,10
+Philippines,PH,2022,skin_brightening,9
+United Arab Emirates,AE,2022,skin_brightening,9
+Singapore,SG,2022,skin_brightening,9
+Namibia,NA,2022,skin_brightening,9
+Sri Lanka,LK,2022,skin_brightening,8
+Jamaica,JM,2022,skin_brightening,8
+Nepal,NP,2022,skin_brightening,7
+Bahrain,BH,2022,skin_brightening,7
+Cameroon,CM,2022,skin_brightening,6
+Tanzania,TZ,2022,skin_brightening,6
+New Zealand,NZ,2022,skin_brightening,6
+Canada,CA,2022,skin_brightening,5
+Indonesia,ID,2022,skin_brightening,5
+Qatar,QA,2022,skin_brightening,5
+Australia,AU,2022,skin_brightening,5
+Cambodia,KH,2022,skin_brightening,5
+Ethiopia,ET,2022,skin_brightening,5
+Myanmar (Burma),MM,2022,skin_brightening,5
+United Kingdom,GB,2022,skin_brightening,5
+United States,US,2022,skin_brightening,4
+Oman,OM,2022,skin_brightening,4
+Kuwait,KW,2022,skin_brightening,3
+Puerto Rico,PR,2022,skin_brightening,3
+Ireland,IE,2022,skin_brightening,3
+Hong Kong,HK,2022,skin_brightening,3
+Norway,NO,2022,skin_brightening,3
+Cyprus,CY,2022,skin_brightening,3
+Cuba,CU,2022,skin_brightening,3
+Saudi Arabia,SA,2022,skin_brightening,2
+Vietnam,VN,2022,skin_brightening,2
+Sweden,SE,2022,skin_brightening,2
+Lebanon,LB,2022,skin_brightening,2
+Iraq,IQ,2022,skin_brightening,2
+Netherlands,NL,2022,skin_brightening,2
+Jordan,JO,2022,skin_brightening,2
+Thailand,TH,2022,skin_brightening,1
+Denmark,DK,2022,skin_brightening,1
+Kazakhstan,KZ,2022,skin_brightening,1
+Greece,GR,2022,skin_brightening,1
+Ukraine,UA,2022,skin_brightening,1
+Finland,FI,2022,skin_brightening,1
+Georgia,GE,2022,skin_brightening,1
+Dominican Republic,DO,2022,skin_brightening,1
+Guatemala,GT,2022,skin_brightening,1
+South Korea,KR,2022,skin_brightening,1
+Belgium,BE,2022,skin_brightening,1
+Egypt,EG,2022,skin_brightening,1
+Portugal,PT,2022,skin_brightening,1
+Lithuania,LT,2022,skin_brightening,1
+Croatia,HR,2022,skin_brightening,1
+Türkiye,TR,2022,skin_brightening,1
+Germany,DE,2022,skin_brightening,1
+Taiwan,TW,2022,skin_brightening,1
+Costa Rica,CR,2022,skin_brightening,1
+Mexico,MX,2022,skin_brightening,1
+Switzerland,CH,2022,skin_brightening,1
+Belarus,BY,2022,skin_brightening,1
+Hungary,HU,2022,skin_brightening,1
+Russia,RU,2022,skin_brightening,1
+Romania,RO,2022,skin_brightening,1
+Poland,PL,2022,skin_brightening,1
+Israel,IL,2022,skin_brightening,1
+Austria,AT,2022,skin_brightening,1
+Czechia,CZ,2022,skin_brightening,1
+Ecuador,EC,2022,skin_brightening,1
+Spain,ES,2022,skin_brightening,1
+Algeria,DZ,2022,skin_brightening,1
+Venezuela,VE,2022,skin_brightening,1
+Peru,PE,2022,skin_brightening,1
+France,FR,2022,skin_brightening,1
+Italy,IT,2022,skin_brightening,1
+Chile,CL,2022,skin_brightening,1
+Colombia,CO,2022,skin_brightening,1
+Iran,IR,2022,skin_brightening,1
+Japan,JP,2022,skin_brightening,1
+Argentina,AR,2022,skin_brightening,1
+Brazil,BR,2022,skin_brightening,1
+Burundi,BI,2023,skin_brightening,100
+Zambia,ZM,2023,skin_brightening,89
+Nigeria,NG,2023,skin_brightening,80
+Uganda,UG,2023,skin_brightening,73
+Lesotho,LS,2023,skin_brightening,71
+Ghana,GH,2023,skin_brightening,69
+Gambia,GM,2023,skin_brightening,62
+Sierra Leone,SL,2023,skin_brightening,61
+Brunei,BN,2023,skin_brightening,56
+Pakistan,PK,2023,skin_brightening,55
+Zimbabwe,ZW,2023,skin_brightening,51
+South Africa,ZA,2023,skin_brightening,51
+India,IN,2023,skin_brightening,46
+Bangladesh,BD,2023,skin_brightening,46
+Kenya,KE,2023,skin_brightening,40
+Trinidad & Tobago,TT,2023,skin_brightening,37
+United Arab Emirates,AE,2023,skin_brightening,35
+Maldives,MV,2023,skin_brightening,34
+Sri Lanka,LK,2023,skin_brightening,32
+Tanzania,TZ,2023,skin_brightening,31
+Guyana,GY,2023,skin_brightening,31
+Malawi,MW,2023,skin_brightening,31
+Namibia,NA,2023,skin_brightening,31
+Malaysia,MY,2023,skin_brightening,30
+Philippines,PH,2023,skin_brightening,28
+Qatar,QA,2023,skin_brightening,28
+Singapore,SG,2023,skin_brightening,28
+Mauritius,MU,2023,skin_brightening,27
+Nepal,NP,2023,skin_brightening,27
+Cameroon,CM,2023,skin_brightening,26
+Jamaica,JM,2023,skin_brightening,24
+Cambodia,KH,2023,skin_brightening,23
+Rwanda,RW,2023,skin_brightening,19
+New Zealand,NZ,2023,skin_brightening,18
+Australia,AU,2023,skin_brightening,18
+Canada,CA,2023,skin_brightening,17
+Kuwait,KW,2023,skin_brightening,16
+Indonesia,ID,2023,skin_brightening,15
+United Kingdom,GB,2023,skin_brightening,15
+Bahrain,BH,2023,skin_brightening,15
+Ethiopia,ET,2023,skin_brightening,15
+Albania,AL,2023,skin_brightening,14
+St. Helena,GB,2023,skin_brightening,13
+Oman,OM,2023,skin_brightening,13
+United States,US,2023,skin_brightening,12
+Myanmar (Burma),MM,2023,skin_brightening,12
+Ireland,IE,2023,skin_brightening,11
+Luxembourg,LU,2023,skin_brightening,10
+Senegal,SN,2023,skin_brightening,10
+Hong Kong,HK,2023,skin_brightening,10
+Puerto Rico,PR,2023,skin_brightening,9
+Sweden,SE,2023,skin_brightening,9
+Estonia,EE,2023,skin_brightening,9
+Saudi Arabia,SA,2023,skin_brightening,8
+Lebanon,LB,2023,skin_brightening,7
+Norway,NO,2023,skin_brightening,7
+Cyprus,CY,2023,skin_brightening,7
+Libya,LY,2023,skin_brightening,7
+South Korea,KR,2023,skin_brightening,7
+China,CN,2023,skin_brightening,7
+Denmark,DK,2023,skin_brightening,6
+Iraq,IQ,2023,skin_brightening,6
+Kyrgyzstan,KG,2023,skin_brightening,6
+Vietnam,VN,2023,skin_brightening,5
+Netherlands,NL,2023,skin_brightening,5
+Honduras,HN,2023,skin_brightening,5
+Jordan,JO,2023,skin_brightening,5
+Ukraine,UA,2023,skin_brightening,5
+Panama,PA,2023,skin_brightening,4
+Georgia,GE,2023,skin_brightening,4
+Lithuania,LT,2023,skin_brightening,4
+Finland,FI,2023,skin_brightening,4
+Kazakhstan,KZ,2023,skin_brightening,4
+Dominican Republic,DO,2023,skin_brightening,4
+Thailand,TH,2023,skin_brightening,3
+Costa Rica,CR,2023,skin_brightening,3
+Switzerland,CH,2023,skin_brightening,3
+Taiwan,TW,2023,skin_brightening,3
+Greece,GR,2023,skin_brightening,3
+Germany,DE,2023,skin_brightening,3
+Belgium,BE,2023,skin_brightening,3
+Mexico,MX,2023,skin_brightening,3
+Morocco,MA,2023,skin_brightening,3
+Türkiye,TR,2023,skin_brightening,3
+Israel,IL,2023,skin_brightening,3
+Austria,AT,2023,skin_brightening,3
+Russia,RU,2023,skin_brightening,3
+Hungary,HU,2023,skin_brightening,2
+Egypt,EG,2023,skin_brightening,2
+Czechia,CZ,2023,skin_brightening,2
+Portugal,PT,2023,skin_brightening,2
+Romania,RO,2023,skin_brightening,2
+Belarus,BY,2023,skin_brightening,2
+Bulgaria,BG,2023,skin_brightening,2
+Spain,ES,2023,skin_brightening,2
+Venezuela,VE,2023,skin_brightening,2
+Uzbekistan,UZ,2023,skin_brightening,2
+Poland,PL,2023,skin_brightening,2
+Croatia,HR,2023,skin_brightening,2
+Serbia,RS,2023,skin_brightening,2
+Slovakia,SK,2023,skin_brightening,1
+Italy,IT,2023,skin_brightening,1
+France,FR,2023,skin_brightening,1
+Chile,CL,2023,skin_brightening,1
+Colombia,CO,2023,skin_brightening,1
+Peru,PE,2023,skin_brightening,1
+Iran,IR,2023,skin_brightening,1
+Japan,JP,2023,skin_brightening,1
+Brazil,BR,2023,skin_brightening,1
+Argentina,AR,2023,skin_brightening,1
+Zambia,ZM,2024,skin_brightening,100
+Nigeria,NG,2024,skin_brightening,98
+Ghana,GH,2024,skin_brightening,98
+Uganda,UG,2024,skin_brightening,84
+Pakistan,PK,2024,skin_brightening,73
+Zimbabwe,ZW,2024,skin_brightening,65
+India,IN,2024,skin_brightening,62
+Mauritius,MU,2024,skin_brightening,56
+Sri Lanka,LK,2024,skin_brightening,53
+Kenya,KE,2024,skin_brightening,52
+South Africa,ZA,2024,skin_brightening,51
+Bangladesh,BD,2024,skin_brightening,50
+Fiji,FJ,2024,skin_brightening,47
+United Arab Emirates,AE,2024,skin_brightening,39
+Qatar,QA,2024,skin_brightening,36
+Nepal,NP,2024,skin_brightening,36
+Cameroon,CM,2024,skin_brightening,35
+Brunei,BN,2024,skin_brightening,35
+Maldives,MV,2024,skin_brightening,34
+Malaysia,MY,2024,skin_brightening,32
+Cambodia,KH,2024,skin_brightening,31
+Tanzania,TZ,2024,skin_brightening,31
+Malawi,MW,2024,skin_brightening,30
+Singapore,SG,2024,skin_brightening,30
+St. Helena,GB,2024,skin_brightening,26
+Trinidad & Tobago,TT,2024,skin_brightening,26
+Namibia,NA,2024,skin_brightening,25
+New Zealand,NZ,2024,skin_brightening,25
+Philippines,PH,2024,skin_brightening,23
+Australia,AU,2024,skin_brightening,23
+Ethiopia,ET,2024,skin_brightening,23
+Canada,CA,2024,skin_brightening,22
+Bahrain,BH,2024,skin_brightening,21
+Jamaica,JM,2024,skin_brightening,20
+Kuwait,KW,2024,skin_brightening,20
+Indonesia,ID,2024,skin_brightening,19
+United Kingdom,GB,2024,skin_brightening,18
+Oman,OM,2024,skin_brightening,16
+Myanmar (Burma),MM,2024,skin_brightening,15
+United States,US,2024,skin_brightening,15
+Lebanon,LB,2024,skin_brightening,14
+Albania,AL,2024,skin_brightening,13
+Cyprus,CY,2024,skin_brightening,13
+Ireland,IE,2024,skin_brightening,13
+Saudi Arabia,SA,2024,skin_brightening,11
+Puerto Rico,PR,2024,skin_brightening,11
+Norway,NO,2024,skin_brightening,11
+Côte d’Ivoire,CI,2024,skin_brightening,10
+Cuba,CU,2024,skin_brightening,10
+Latvia,LV,2024,skin_brightening,10
+Sweden,SE,2024,skin_brightening,10
+South Korea,KR,2024,skin_brightening,9
+Hong Kong,HK,2024,skin_brightening,9
+China,CN,2024,skin_brightening,9
+Armenia,AM,2024,skin_brightening,8
+Iraq,IQ,2024,skin_brightening,8
+Thailand,TH,2024,skin_brightening,7
+Honduras,HN,2024,skin_brightening,7
+Vietnam,VN,2024,skin_brightening,7
+Netherlands,NL,2024,skin_brightening,7
+Denmark,DK,2024,skin_brightening,6
+Kyrgyzstan,KG,2024,skin_brightening,6
+Panama,PA,2024,skin_brightening,6
+Lithuania,LT,2024,skin_brightening,6
+Greece,GR,2024,skin_brightening,6
+Kazakhstan,KZ,2024,skin_brightening,6
+Ukraine,UA,2024,skin_brightening,5
+Finland,FI,2024,skin_brightening,5
+Egypt,EG,2024,skin_brightening,5
+Bulgaria,BG,2024,skin_brightening,4
+Slovakia,SK,2024,skin_brightening,4
+Jordan,JO,2024,skin_brightening,4
+Russia,RU,2024,skin_brightening,4
+Costa Rica,CR,2024,skin_brightening,4
+Switzerland,CH,2024,skin_brightening,4
+Belgium,BE,2024,skin_brightening,4
+Romania,RO,2024,skin_brightening,4
+Morocco,MA,2024,skin_brightening,4
+Mexico,MX,2024,skin_brightening,4
+Germany,DE,2024,skin_brightening,4
+Uzbekistan,UZ,2024,skin_brightening,3
+Croatia,HR,2024,skin_brightening,3
+Czechia,CZ,2024,skin_brightening,3
+Türkiye,TR,2024,skin_brightening,3
+Portugal,PT,2024,skin_brightening,3
+Poland,PL,2024,skin_brightening,3
+Israel,IL,2024,skin_brightening,3
+Austria,AT,2024,skin_brightening,3
+Taiwan,TW,2024,skin_brightening,3
+Spain,ES,2024,skin_brightening,2
+Italy,IT,2024,skin_brightening,2
+Peru,PE,2024,skin_brightening,2
+Algeria,DZ,2024,skin_brightening,2
+Hungary,HU,2024,skin_brightening,2
+Serbia,RS,2024,skin_brightening,2
+Belarus,BY,2024,skin_brightening,2
+France,FR,2024,skin_brightening,2
+Chile,CL,2024,skin_brightening,2
+Venezuela,VE,2024,skin_brightening,2
+Colombia,CO,2024,skin_brightening,1
+Iran,IR,2024,skin_brightening,1
+Brazil,BR,2024,skin_brightening,1
+Japan,JP,2024,skin_brightening,1
+Argentina,AR,2024,skin_brightening,1

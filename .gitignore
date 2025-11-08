@@ -1,0 +1,14 @@
+.DS_Store
+*.swp
+node_modules/
+npm-debug.log*
+yarn.lock
+pnpm-lock.yaml
+
+# Observable Framework build/artifacts
+site/dist/
+site/src/.observablehq/cache/
+site/.observablehq/cache/
+
+# Env & local
+.env
