@@ -42,4 +42,17 @@
   .legend {
     color: var(--theme-foreground-muted);
   }
+
+  /* Make the whole page sit further left and a bit wider */
+.observablehq--main,
+body > main,
+body > div.observablehq {
+  max-width: 1400px !important;      /* wider content area */
+  margin: 1.5rem 0 3rem 0.5rem !important;
+  /*         top  right bottom left  */
+  padding-left: 0 !important;
+}
+
+
+
   
