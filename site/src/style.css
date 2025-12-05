@@ -1,0 +1,45 @@
+:root {
+    --theme-background: #000;
+    --theme-foreground: #fff;
+    --theme-foreground-muted: #aaa;
+    --theme-accent: #00ffff; /* Optional: teal accent for sliders/links */
+  }
+  
+  body {
+    background-color: var(--theme-background);
+    color: var(--theme-foreground);
+    font-family: system-ui, sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5 {
+    color: var(--theme-foreground);
+  }
+  
+  a {
+    color: var(--theme-accent);
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  input[type="range"] {
+    accent-color: var(--theme-accent);
+  }
+  
+  select {
+    background-color: #111;
+    color: var(--theme-foreground);
+    border: 1px solid #333;
+    padding: 4px;
+    border-radius: 4px;
+  }
+  
+  svg text {
+    fill: var(--theme-foreground);
+  }
+  
+  .legend {
+    color: var(--theme-foreground-muted);
+  }
+  

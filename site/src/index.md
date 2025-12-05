@@ -3,6 +3,9 @@ title: Global Interest in Cosmetic Procedures
 toc: false
 ---
 
+<link rel="stylesheet" href="./style.css">
+
+
 # Global Interest in Cosmetic Procedures
 
 This interactive choropleth shows worldwide search interest for **various cosmetic procedures** from **2010–2024**, based on Google Trends data.  
@@ -122,9 +125,17 @@ const elProcedure = Inputs.select(procedures, {
   format: v => PROCEDURE_LABEL[v] ?? v,
   value: procedures[0]
 });
-const elYearStart = Inputs.range([yearMinGlobal, yearMaxGlobal], {label: "Start year", value: 2015, step: 1});
-const elYearEnd   = Inputs.range([yearMinGlobal, yearMaxGlobal], {label: "End year", value: 2024, step: 1});
-const elRegion    = Inputs.select(regionsAll, {label: "Selected country", value: prefer});
+
+const elYear = Inputs.range([yearMinGlobal, yearMaxGlobal], {
+  label: "Year",
+  value: 2015,
+  step: 1
+});
+
+const elRegion = Inputs.select(regionsAll, {
+  label: "Selected country",
+  value: prefer
+});
 
 const elMsg = document.createElement("div");
 elMsg.style.margin = "0.25rem 0 0.5rem";
@@ -132,34 +143,17 @@ elMsg.style.fontSize = "12px";
 elMsg.style.color = "var(--theme-red, #b91c1c)";
 elMsg.style.display = "none";
 
-controlsEl.append(elProcedure, elYearStart, elYearEnd, elRegion, elMsg);
+controlsEl.append(elProcedure, elYear, elRegion, elMsg);
 
-// Keep yearEnd ≥ yearStart
-const startSlider = elYearStart.querySelector('input[type="range"]');
-const endSlider   = elYearEnd.querySelector('input[type="range"]');
-function showError(msg) {
-  elMsg.textContent = msg;
-  elMsg.style.display = "";
-  clearTimeout(showError._t);
-  showError._t = setTimeout(() => elMsg.style.display = "none", 2000);
-}
-function syncYearBounds() {
-  if (endSlider) endSlider.min = String(elYearStart.value);
-  if (+elYearEnd.value < +elYearStart.value) elYearEnd.value = elYearStart.value;
-}
-elYearStart.addEventListener("input", () => { elYearEnd.value = elYearStart.value; syncYearBounds(); update(); });
-elYearEnd.addEventListener("input", () => {
-  if (+elYearEnd.value < +elYearStart.value) { elYearEnd.value = elYearStart.value; syncYearBounds(); showError("End year must not be before start year."); }
-  update();
-});
-syncYearBounds();
 
 /* ----------------------------- 3) Data helpers ----------------------------- */
 function filteredRows(s) {
-  const y0 = Math.min(s.yearStart, s.yearEnd);
-  const y1 = Math.max(s.yearStart, s.yearEnd);
-  return rows.filter(d => d.procedure === s.procedure && d.year >= y0 && d.year <= y1);
+  return rows.filter(d =>
+    d.procedure === s.procedure &&
+    d.year === s.year
+  );
 }
+
 function aggByRegion(data) {
   const by = d3.group(data, d => d.region);
   return Array.from(by, ([region, arr]) => ({region, mean: d3.mean(arr, d => d.interest)}));
@@ -174,11 +168,11 @@ const countries = feature(world, world.objects.countries).features;
 function dateSpan(y0, y1) { return `(Jan 1 ${y0} – Dec 31 ${y1})`; }
 function renderHeadline(s) {
   const label = regionNames.of(s.region) || s.region;
-  const y0 = Math.min(s.yearStart, s.yearEnd);
-  const y1 = Math.max(s.yearStart, s.yearEnd);
-  headlineEl.innerHTML = `<b>${label}</b> · ${PROCEDURE_LABEL[s.procedure] ?? s.procedure} · ${y0}–${y1} 
-    <span style="color:var(--theme-foreground-muted)">${dateSpan(y0, y1)}</span>`;
+  const year = s.year;
+  headlineEl.innerHTML = `<b>${label}</b> · ${PROCEDURE_LABEL[s.procedure] ?? s.procedure} · ${year} 
+    <span style="color:var(--theme-foreground-muted)">(Jan 1 ${year} – Dec 31 ${year})</span>`;
 }
+
 
 function renderMap(s, data) {
   mapEl.innerHTML = "";
@@ -186,7 +180,14 @@ function renderMap(s, data) {
   const agg = aggByRegion(data);
   const valueByIso2 = new Map(agg.map(d => [d.region, d.mean]));
   const domain = [0, 100];
-  const color = d3.scaleSequential(d3.interpolateYlGnBu).domain(domain);
+
+  // Dark-friendly color scale
+  const color = d3.scaleSequential(d3.interpolateTurbo).domain(domain);
+
+  // Dark theme colors
+  const bgColor      = "#020617"; // page / ocean
+  const noDataColor  = "#111827"; // countries with no data
+  const borderColor  = "#0f172a";
 
   const width = Math.min(1400, mapEl.clientWidth || 960);
   const height = Math.round(width * 0.52);
@@ -194,8 +195,14 @@ function renderMap(s, data) {
   const path = d3.geoPath(projection);
 
   const svg = d3.create("svg").attr("width", width).attr("height", height);
-  svg.append("rect").attr("width", width).attr("height", height).attr("fill", "#f8fafc");
 
+  // Background
+  svg.append("rect")
+    .attr("width", width)
+    .attr("height", height)
+    .attr("fill", bgColor);
+
+  // Countries
   svg.append("g")
     .selectAll("path")
     .data(countries)
@@ -204,9 +211,9 @@ function renderMap(s, data) {
     .attr("fill", d => {
       const code = iso2FromName(d.properties.name);
       const v = code ? valueByIso2.get(code) : undefined;
-      return Number.isFinite(v) ? color(v) : "#e5e7eb";
+      return Number.isFinite(v) ? color(v) : noDataColor;
     })
-    .attr("stroke", "#fff")
+    .attr("stroke", borderColor)
     .attr("stroke-width", 0.5)
     .on("click", (event, d) => {
       const code = iso2FromName(d.properties.name);
@@ -219,11 +226,29 @@ function renderMap(s, data) {
       return `${d.properties.name} (${code ?? "—"})\nInterest: ${Number.isFinite(v) ? Math.round(v) : "n/a"}`;
     });
 
-  const legend = Plot.legend({color: {type: "sequential", scheme: "ylgnbu", domain}, label: "Search interest (0–100)"});
+  // Legend (tweak text color for dark bg)
+  const legend = Plot.legend({
+    color: { type: "sequential", scheme: "turbo", domain },
+    label: "Search interest (0–100)"
+  });
+  legend.style.color = "#e5e7eb";
+  legend.style.background = "transparent";
+
   const nodata = document.createElement("div");
   nodata.style.fontSize = "12px";
   nodata.style.marginTop = "4px";
-  nodata.innerHTML = `<span style="display:inline-block;width:12px;height:12px;background:#e5e7eb;border:1px solid #d1d5db;margin-right:6px;vertical-align:middle;"></span> Gray = No data`;
+  nodata.style.color = "#e5e7eb";
+  nodata.innerHTML = `
+    <span style="
+      display:inline-block;
+      width:12px;height:12px;
+      background:${noDataColor};
+      border:1px solid #4b5563;
+      margin-right:6px;
+      vertical-align:middle;
+    "></span>
+    Gray = No data
+  `;
 
   const wrap = document.createElement("div");
   wrap.appendChild(svg.node());
@@ -232,21 +257,27 @@ function renderMap(s, data) {
   mapEl.appendChild(wrap);
 }
 
+
 /* ----------------------------- 5) State & Update ----------------------------- */
 function state() {
   return {
     procedure: elProcedure.value,
-    yearStart: +elYearStart.value,
-    yearEnd: +elYearEnd.value,
+    year: +elYear.value,
     region: elRegion.value
   };
 }
+
 function update() {
   const s = state();
   const data = filteredRows(s);
   renderHeadline(s);
   renderMap(s, data);
 }
-[elProcedure, elRegion].forEach(el => el.addEventListener("input", update));
+
+[elProcedure, elRegion, elYear].forEach(el =>
+  el.addEventListener("input", update)
+);
+
 window.addEventListener("resize", update);
 update();
+
