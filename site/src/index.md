@@ -356,7 +356,8 @@ function renderMap(s, data) {
     .attr("fill", bgColor);
 
     // Countries
-  svg.append("g")
+    // Countries (with selection highlight)
+  const countryPaths = svg.append("g")
     .selectAll("path")
     .data(countries)
     .join("path")
@@ -366,20 +367,41 @@ function renderMap(s, data) {
       const v = code ? valueByIso2.get(code) : undefined;
       return Number.isFinite(v) ? color(v) : noDataColor;
     })
-    .attr("stroke", borderColor)
-    .attr("stroke-width", 0.5)
+    .attr("stroke", d => {
+      const code = iso2FromName(d.properties.name);
+      const isSelected = code && code === selectedRegion;
+      // bright orange outline when selected, normal border otherwise
+      return isSelected ? "#df05e3" : borderColor;
+    })
+    .attr("stroke-width", d => {
+      const code = iso2FromName(d.properties.name);
+      const isSelected = code && code === selectedRegion;
+      return isSelected ? 2.5 : 0.5;
+    })
+    .style("filter", d => {
+      const code = iso2FromName(d.properties.name);
+      const isSelected = code && code === selectedRegion;
+      // soft glow when selected
+      return isSelected ? "drop-shadow(0 0 6px rgba(249,115,22,0.8))" : "none";
+    })
+    .style("cursor", "pointer")
     .on("click", (event, d) => {
       const code = iso2FromName(d.properties.name);
       if (!code) return;
-      selectedRegion = code;   // update global state
-      update();                // re-render charts
-    })
-    .append("title")
+
+      // Toggle: click again to clear selection
+      selectedRegion = (selectedRegion === code ? null : code);
+      update(); // re-render map + trend + top-3 + context
+    });
+
+  // Tooltips
+  countryPaths.append("title")
     .text(d => {
       const code = iso2FromName(d.properties.name);
       const v = code ? valueByIso2.get(code) : undefined;
       return `${d.properties.name} (${code ?? "—"})\nInterest: ${Number.isFinite(v) ? Math.round(v) : "n/a"}`;
     });
+
 
 
 
