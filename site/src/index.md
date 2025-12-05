@@ -7,6 +7,7 @@ toc: false
 
 
 # Global Interest in Cosmetic Procedures
+[About this project & GitHub repo →](/about)
 
 This interactive choropleth shows worldwide search interest for **various cosmetic procedures** from **2010–2024**, based on Google Trends data.  
 Use the controls below to explore changes across years and countries.
