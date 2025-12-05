@@ -632,13 +632,28 @@ function renderTopbar(s) {
 
 
   const title = document.createElement("div");
-  title.style.fontSize = "0.95rem";
-  title.style.fontWeight = "600";
-  title.style.marginBottom = "0.35rem";
-  title.textContent = `Top 3 countries · ${PROCEDURE_LABEL[s.procedure] ?? s.procedure} · ${s.year}`;
+title.style.fontSize = "0.95rem";
+title.style.fontWeight = "600";
+title.style.marginBottom = "0.25rem";
+title.textContent = `Top 3 countries · ${PROCEDURE_LABEL[s.procedure] ?? s.procedure} · ${s.year}`;
+topbarEl.appendChild(title);
 
-  topbarEl.appendChild(title);
+// NEW — explanation directly under the title
+const explainer = document.createElement("div");
+explainer.style.fontSize = "0.8rem";
+explainer.style.color = "#9ca3af";
+explainer.style.marginBottom = "0.5rem";
+explainer.style.lineHeight = "1.3";
+explainer.textContent =
+  "These are the three countries with the highest average search interest for the selected year and procedure.";
+topbarEl.appendChild(explainer);
+
+// Then add the chart
+topbarEl.appendChild(plot);
+
   topbarEl.appendChild(plot);
+
+  
 }
 
 
