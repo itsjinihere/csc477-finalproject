@@ -530,10 +530,13 @@ function renderTrend(s) {
   });
 
   // --- Dynamic title -------------------------------------------------------
-  const hasCountry = countrySeries.length > 0 && countryLabel;
-  const titleText = hasCountry
-    ? `Global vs ${countryLabel} search interest over time`
-    : "Global search interest over time";
+const procLabel = PROCEDURE_LABEL[s.procedure] ?? s.procedure;
+const hasCountry = countrySeries.length > 0 && countryLabel;
+
+const titleText = hasCountry
+  ? `Global vs ${countryLabel} search interest for ${procLabel} over time`
+  : `Global search interest for ${procLabel} over time`;
+
 
   const titleEl = document.createElement("div");
   titleEl.style.fontSize = "0.95rem";
