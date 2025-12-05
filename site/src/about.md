@@ -3,6 +3,8 @@ title: Project Links & Credits
 toc: false
 ---
 
+<link rel="stylesheet" href="./style.css">
+
 # Project Resources
 
 ## GitHub Repository
@@ -22,5 +24,5 @@ This project explores global search interest in cosmetic procedures using:
 ---
 
 ## Authors
-Sreerenjini Namboothiri & Muska Said 
+Sreerenjini Surendran Namboothiri & Muska Said          
 Cal Poly SLO · CSC 477 · Fall 2025

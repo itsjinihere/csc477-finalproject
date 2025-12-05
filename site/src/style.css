@@ -4,6 +4,17 @@
     --theme-foreground-muted: #aaa;
     --theme-accent: #00ffff; /* Optional: teal accent for sliders/links */
   }
+  html,
+body {
+  background: #000;
+}
+
+/* Observable shell containers */
+.observablehq,
+.observablehq-shell {
+  background: #000;
+}
+
   
   body {
     background-color: var(--theme-background);
@@ -52,6 +63,91 @@ body > div.observablehq {
   /*         top  right bottom left  */
   padding-left: 0 !important;
 }
+
+/* ===============================
+   DARK MODE FOR OBSERVABLE SIDEBAR
+   =============================== */
+
+   #observablehq-sidebar,
+   .observablehq-sidebar {
+     background-color: #000 !important;
+     color: #e5e7eb !important;
+     border-right: 1px solid #222 !important;
+   }
+   
+   /* Sidebar links */
+   #observablehq-sidebar a,
+   .observablehq-sidebar a {
+     color: #e5e7eb !important;
+   }
+   
+   /* Hover effect */
+   #observablehq-sidebar a:hover,
+   .observablehq-sidebar a:hover {
+     color: #38bdf8 !important; /* light blue */
+   }
+   
+   /* Sidebar section headers */
+   #observablehq-sidebar summary,
+   .observablehq-sidebar summary {
+     color: #ccc !important;
+   }
+   
+   /* Divider lines */
+   #observablehq-sidebar hr,
+   .observablehq-sidebar hr {
+     border-color: #1f2937 !important;
+   }
+
+   /* ----- Darken the Observable sidebar completely ----- */
+
+/* Sidebar container */
+#observablehq-sidebar {
+  background: #000 !important;
+  border-right: 1px solid #111 !important;
+}
+
+/* The list that holds the links */
+#observablehq-sidebar ol {
+  background: #000 !important;
+}
+
+/* Each nav item, including the active one */
+#observablehq-sidebar li,
+#observablehq-sidebar li.observablehq-link,
+#observablehq-sidebar li.observablehq-link-active {
+  background: #000 !important;       /* kill the white box */
+  border-bottom-color: #111 !important;
+}
+
+/* Link text in the sidebar */
+#observablehq-sidebar a {
+  color: #e5e7eb !important;
+}
+
+/* Hover state for links */
+#observablehq-sidebar a:hover {
+  color: #38bdf8 !important;
+}
+
+/* Final override: make the entire Observable sidebar dark */
+#observablehq-sidebar,
+#observablehq-sidebar * {
+  background-color: #000 !important;   /* full black sidebar & header chip */
+  color: #e5e7eb !important;           /* light gray text */
+  box-shadow: none !important;         /* remove any light drop-shadows */
+}
+
+/* Optional: active link highlight on the border instead of background */
+#observablehq-sidebar li.observablehq-link-active {
+  border-left: 4px solid #38bdf8 !important;  /* blue accent bar */
+}
+
+
+
+   
+
+   
 
 
 
