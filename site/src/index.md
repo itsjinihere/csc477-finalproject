@@ -39,6 +39,22 @@ Use the controls below to explore changes across years and countries.
 
 </div>
 
+<!-- Trend + Top-3 charts under the map -->
+<div id="charts-row" style="
+  display:flex;
+  gap:-4rem;                /* slightly smaller gap pulls bar chart left */
+  align-items:flex-start;
+  margin-top:1.25rem;
+">
+  <!-- Trend line chart (global + optional country) -->
+  <div id="trend-chart" style="flex:1 1 60%; min-width:0;"></div>
+
+  <!-- Top-3 countries bar chart for current year + procedure -->
+  <div id="topbar-chart" style="flex:0 0 560px; min-width:300px;"></div>
+</div>
+
+
+
 
 
 
@@ -137,6 +153,10 @@ const rows = rawAll.map(d => ({
   interest: +d.interest
 })).filter(d => d.region && Number.isFinite(d.interest));
 
+// Currently selected country (for the trend chart); null = only global
+let selectedRegion = null;
+
+
 // Available procedures (in a nice order if both exist)
 const PROCEDURE_LABEL = {botox: "Botox", skin_brightening: "Skin brightening", rhinoplasty: "Rhinoplasty"};
 const procedures = ["botox","skin_brightening","rhinoplasty"].filter(p => rows.some(d => d.procedure === p));
@@ -211,6 +231,9 @@ const mapEl = document.getElementById("map");
 const contextEl = document.getElementById("context-panel");
 const world = await d3.json("https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json");
 const countries = feature(world, world.objects.countries).features;
+const trendEl = document.getElementById("trend-chart");
+const topbarEl = document.getElementById("topbar-chart");
+
 
 function dateSpan(y0, y1) { return `(Jan 1 ${y0} – Dec 31 ${y1})`; }
 function renderHeadline(s) {
@@ -332,8 +355,8 @@ function renderMap(s, data) {
     .attr("height", height)
     .attr("fill", bgColor);
 
-  // Countries
-    svg.append("g")
+    // Countries
+  svg.append("g")
     .selectAll("path")
     .data(countries)
     .join("path")
@@ -345,12 +368,19 @@ function renderMap(s, data) {
     })
     .attr("stroke", borderColor)
     .attr("stroke-width", 0.5)
+    .on("click", (event, d) => {
+      const code = iso2FromName(d.properties.name);
+      if (!code) return;
+      selectedRegion = code;   // update global state
+      update();                // re-render charts
+    })
     .append("title")
     .text(d => {
       const code = iso2FromName(d.properties.name);
       const v = code ? valueByIso2.get(code) : undefined;
       return `${d.properties.name} (${code ?? "—"})\nInterest: ${Number.isFinite(v) ? Math.round(v) : "n/a"}`;
     });
+
 
 
   // Legend (tweak text color for dark bg)
@@ -374,7 +404,7 @@ function renderMap(s, data) {
       margin-right:6px;
       vertical-align:middle;
     "></span>
-    Gray = No data
+     = No data
   `;
 
   const wrap = document.createElement("div");
@@ -384,23 +414,235 @@ function renderMap(s, data) {
   mapEl.appendChild(wrap);
 }
 
+/* ----------------------------- 4b) Trend line chart ----------------------------- */
+
+function renderTrend(s) {
+  trendEl.innerHTML = "";
+
+  const proc = s.procedure;
+  const procRows = rows.filter(d => d.procedure === proc);
+
+  if (!procRows.length) {
+    trendEl.innerHTML = "<div style='color:#9ca3af;font-size:0.9rem;'>No data available for this procedure.</div>";
+    return;
+  }
+
+  // Global mean per year for this procedure
+  const byYear = d3.rollup(
+    procRows,
+    v => d3.mean(v, d => d.interest),
+    d => d.year
+  );
+  const globalSeries = Array.from(byYear, ([year, value]) => ({ year, value }))
+    .sort((a, b) => d3.ascending(a.year, b.year));
+
+  // Optional country series if a country is selected
+  let countrySeries = [];
+  let countryLabel = null;
+  if (selectedRegion) {
+    const countryRows = procRows.filter(d => d.region === selectedRegion);
+    if (countryRows.length) {
+      const byYearCountry = d3.rollup(
+        countryRows,
+        v => d3.mean(v, d => d.interest),
+        d => d.year
+      );
+      countrySeries = Array.from(byYearCountry, ([year, value]) => ({ year, value }))
+        .sort((a, b) => d3.ascending(a.year, b.year));
+      countryLabel = regionNames.of(selectedRegion) || selectedRegion;
+    }
+  }
+
+  const width = Math.min(900, trendEl.clientWidth || 800);
+  const height = 260;
+
+  const marks = [
+    // Global line
+    Plot.line(globalSeries, {
+      x: "year",
+      y: "value",
+      stroke: "#22c55e",
+      strokeWidth: 2
+    }),
+    Plot.dot(globalSeries, {
+      x: "year",
+      y: "value",
+      r: 2,
+      fill: "#22c55e"
+    })
+  ];
+
+  if (countrySeries.length) {
+    marks.push(
+      Plot.line(countrySeries, {
+        x: "year",
+        y: "value",
+        stroke: "#60a5fa",
+        strokeWidth: 2
+      }),
+      Plot.dot(countrySeries, {
+        x: "year",
+        y: "value",
+        r: 2,
+        fill: "#60a5fa"
+      })
+    );
+  }
+
+    const plot = Plot.plot({
+    width,
+    height,
+    marginLeft: 42,
+    marginBottom: 32,
+    style: { background: "transparent", color: "#e5e7eb" },
+    x: {
+      label: "Year",
+      tickFormat: d3.format("d")
+    },
+    y: {
+      label: "Mean search interest",
+      domain: [0, 100]
+    },
+    marks
+  });
+
+  // --- Dynamic title -------------------------------------------------------
+  const hasCountry = countrySeries.length > 0 && countryLabel;
+  const titleText = hasCountry
+    ? `Global vs ${countryLabel} search interest over time`
+    : "Global search interest over time";
+
+  const titleEl = document.createElement("div");
+  titleEl.style.fontSize = "0.95rem";
+  titleEl.style.fontWeight = "600";
+  titleEl.style.marginBottom = "0.25rem";
+  titleEl.textContent = titleText;
+
+  // --- Hint above the chart -----------------------------------------------
+  const hint = document.createElement("div");
+  hint.style.fontSize = "0.8rem";
+  hint.style.color = "#9ca3af";
+  hint.style.marginBottom = "0.35rem";
+  hint.textContent = "Click a country on the map to compare it with the global trend.";
+
+  // --- Legend under the chart ---------------------------------------------
+  const legend = document.createElement("div");
+  legend.style.marginTop = "0.25rem";
+  legend.style.fontSize = "0.8rem";
+  legend.style.color = "#e5e7eb";
+  legend.innerHTML = `
+    <span style="display:inline-block;width:12px;height:2px;background:#22c55e;margin-right:4px;"></span>
+    Global average
+    ${
+      hasCountry
+        ? `&nbsp;&nbsp;&nbsp;
+           <span style="display:inline-block;width:12px;height:2px;background:#60a5fa;margin-right:4px;margin-left:8px;"></span>
+           ${countryLabel}`
+        : ""
+    }
+  `;
+
+  // Clear and append in order
+  trendEl.appendChild(titleEl);
+  trendEl.appendChild(hint);
+  trendEl.appendChild(plot);
+  trendEl.appendChild(legend);
+}
+
+
+/* ----------------------------- 4c) Top-3 bar chart ----------------------------- */
+
+function renderTopbar(s) {
+  topbarEl.innerHTML = "";
+
+  const data = filteredRows(s);
+  if (!data.length) {
+    topbarEl.innerHTML = "<div style='color:#9ca3af;font-size:0.9rem;'>No data for this year.</div>";
+    return;
+  }
+
+  // Aggregate by region
+  const agg = aggByRegion(data)
+    .filter(d => Number.isFinite(d.mean))
+    .sort((a, b) => d3.descending(a.mean, b.mean));
+
+  const top3 = agg.slice(0, 3).map(d => ({
+    region: d.region,
+    label: regionNames.of(d.region) || d.region,
+    mean: d.mean
+  }));
+
+    const width = Math.min(380, topbarEl.clientWidth || 360);
+  const height = 230;
+
+  const plot = Plot.plot({
+    width,
+    height,
+    marginLeft: 90,
+    marginRight: 40,   // extra space so bars + labels aren’t clipped
+    marginBottom: 30,
+    style: { background: "transparent", color: "#e5e7eb" },
+    x: {
+      domain: [0, 100],
+      label: "Search interest"
+    },
+    y: {
+      label: null,
+      tickSize: 0,
+      domain: top3.map(d => d.label)
+    },
+    marks: [
+      Plot.barX(top3, {
+        x: "mean",
+        y: "label",
+        fill: d => (d.region === selectedRegion ? "#facc15" : "#38bdf8")
+      }),
+      Plot.text(top3, {
+        x: d => d.mean + 2,
+        y: "label",
+        text: d => Math.round(d.mean),
+        textAnchor: "start",
+        dy: 3,
+        fontSize: 11
+      })
+    ]
+  });
+
+
+  const title = document.createElement("div");
+  title.style.fontSize = "0.95rem";
+  title.style.fontWeight = "600";
+  title.style.marginBottom = "0.35rem";
+  title.textContent = `Top 3 countries · ${PROCEDURE_LABEL[s.procedure] ?? s.procedure} · ${s.year}`;
+
+  topbarEl.appendChild(title);
+  topbarEl.appendChild(plot);
+}
+
+
+
+
 
 /* ----------------------------- 5) State & Update ----------------------------- */
 function state() {
   return {
     procedure: elProcedure.value,
     year: +elYear.value,
-    //region: elRegion.value
+    region: selectedRegion
   };
 }
+
 
 function update() {
   const s = state();
   const data = filteredRows(s);
   renderHeadline(s);
   renderMap(s, data);
-  renderContext(s);   // NEW
+  renderTrend(s);
+  renderTopbar(s);
+  renderContext(s);
 }
+
 
 [elProcedure, elYear].forEach(el =>
   el.addEventListener("input", update)
